@@ -400,7 +400,7 @@ class SaleOrder(models.Model):
         }
         user_id = partner_user.id
         if not self.env.context.get('not_self_saleperson'):
-            user_id = user_id or self.env.uid
+            user_id = user_id or self.env.context.get('default_user_id', self.env.uid)
         if user_id and self.user_id.id != user_id:
             values['user_id'] = user_id
 
@@ -578,7 +578,8 @@ class SaleOrder(models.Model):
             'campaign_id': self.campaign_id.id,
             'medium_id': self.medium_id.id,
             'source_id': self.source_id.id,
-            'invoice_user_id': self.user_id and self.user_id.id,
+            'user_id': self.user_id.id,
+            'invoice_user_id': self.user_id.id,
             'team_id': self.team_id.id,
             'partner_id': self.partner_invoice_id.id,
             'partner_shipping_id': self.partner_shipping_id.id,

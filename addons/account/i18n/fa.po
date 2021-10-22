@@ -5597,7 +5597,7 @@ msgstr "ارز خارجی"
 #: code:addons/account/report/account_journal.py:0
 #, python-format
 msgid "Form content is missing, this report cannot be printed."
-msgstr ""
+msgstr "محتوای فرم موجود نیست ، این گزارش قابل چاپ نیست."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax_report_line__formula
@@ -13768,6 +13768,18 @@ msgid ""
 msgstr ""
 "شما می توانید مدل های مختلف برای هر نوع شماره پیگیری انتخاب کنید. مورد "
 "پیشفرض شماره پیگیری اودو است."
+
+#. module: account
+#: code:addons/account/models/account_journal.py:0
+#, python-format
+msgid ""
+"You can not archive a journal containing draft journal entries.\n"
+"\n"
+"To proceed:\n"
+"1/ click on the top-right button 'Journal Entries' from this journal form\n"
+"2/ then filter on 'Draft' entries\n"
+"3/ select them all and post or delete them through the action menu"
+msgstr ""
 
 #. module: account
 #: code:addons/account/models/account_payment_term.py:0

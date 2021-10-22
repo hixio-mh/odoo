@@ -3478,7 +3478,7 @@ msgstr "Koguseosa"
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_bom
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrporder
 msgid "Quantity"
-msgstr "Kogus"
+msgstr "Tehtud kogused"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__qty_produced
@@ -5317,7 +5317,7 @@ msgstr "Palun määra partii/seerianumber järgmistele toodetele:"
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.action_mrp_production_backorder
 msgid "You produced less than initial demand"
-msgstr "Teil on toodetud algsest nõutud kogusest vähem."
+msgstr "Teil on toodetud algsest nõutud kogustest vähem."
 
 #. module: mrp
 #: code:addons/mrp/models/mrp_unbuild.py:0
